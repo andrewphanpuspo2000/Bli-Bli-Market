@@ -1,0 +1,158 @@
+:root {
+  --text-color: black;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.wrapper {
+  height: 100vh;
+}
+.flex {
+  display: flex;
+}
+.font-size-title {
+  font-size: 200%;
+  font-weight: 600;
+}
+.headers {
+  background-color: rgb(185, 71, 185);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.logo {
+  color: whitesmoke;
+}
+.nav-link-option ul {
+  list-style: none;
+  gap: 1rem;
+}
+.nav-link-option ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.containers {
+  height: 60%;
+}
+.intro {
+  height: 100%;
+  width: 100%;
+  background-image: url(./assets/adrian-infernus-GLf7bAwCdYg-unsplash.jpg);
+  justify-content: space-around;
+  align-items: center;
+  padding: 15rem 0;
+}
+.intro p {
+  margin-top: 0;
+}
+.desc {
+  width: 50%;
+}
+.desc > p:nth-child(1) {
+  font-size: 300%;
+  font-weight: 600;
+}
+
+.desc input {
+  width: 60%;
+}
+.desc .option-hero {
+  padding-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.desc .option-hero > button {
+  background: rgb(185, 71, 185);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1.2rem;
+  border: none;
+}
+.desc .option-hero > button:hover {
+  background-color: blueviolet;
+}
+.gif {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.search {
+  align-items: center;
+}
+.search i {
+  position: relative;
+  right: 2rem;
+}
+.Trending {
+  width: 100vw;
+  height: 40%;
+}
+.cardContainer {
+  width: 100%;
+  /* height: 100%; */
+}
+.card-single {
+  width: 30%;
+  height: 100%;
+  box-shadow: 0 0 10px;
+  flex-direction: column;
+}
+.card-single .img {
+  width: 100%;
+  height: 30%;
+}
+.card-single img {
+  width: 100%;
+}
+
+@media (max-width: 690px) {
+  .intro {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .desc input {
+    width: 100%;
+  }
+
+  .gif {
+    width: 70%;
+  }
+  .desc > p:nth-child(1) {
+    font-size: 200%;
+    font-weight: 600;
+  }
+  .font-size-title {
+    font-size: 150%;
+    font-weight: 600;
+  }
+  .containers {
+    height: 70%;
+  }
+  .desc .option-hero {
+    gap: 1rem;
+  }
+  .desc input {
+    padding-right: 3rem;
+  }
+}
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.image {
+  width: 50%;
+  height: 70%;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
