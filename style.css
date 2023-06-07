@@ -6,9 +6,11 @@
 }
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 .wrapper {
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
 }
 .flex {
   display: flex;
@@ -18,13 +20,17 @@ body {
   font-weight: 600;
 }
 .headers {
-  background-color: rgb(185, 71, 185);
+  background-color: #20551b;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
 }
 .logo {
   color: whitesmoke;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
 }
 .nav-link-option ul {
   list-style: none;
@@ -36,123 +42,96 @@ body {
   font-weight: bold;
   font-size: 1.2rem;
 }
-.containers {
-  height: 60%;
+.bannerContainer {
+  height: 60vh;
+  padding: 1rem;
+  background: #389938de;
+  align-items: center;
 }
 .intro {
-  height: 100%;
-  width: 100%;
-  background-image: url(./assets/adrian-infernus-GLf7bAwCdYg-unsplash.jpg);
-  justify-content: space-around;
-  align-items: center;
-  padding: 15rem 0;
-}
-.intro p {
-  margin-top: 0;
-}
-.desc {
   width: 50%;
+  color: whitesmoke;
 }
-.desc > p:nth-child(1) {
-  font-size: 300%;
-  font-weight: 600;
+.slidesContainer {
+  width: 50%;
+  height: 100%;
 }
-
-.desc input {
-  width: 60%;
-}
-.desc .option-hero {
-  padding-top: 2rem;
-  display: flex;
-  gap: 1rem;
-}
-.desc .option-hero > button {
-  background: rgb(185, 71, 185);
-  color: white;
+.option button {
   padding: 0.5rem 1rem;
-  border-radius: 1.2rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  background: #216dde;
+  color: whitesmoke;
   border: none;
 }
-.desc .option-hero > button:hover {
-  background-color: blueviolet;
+.option button:hover {
+  background-color: #124797;
 }
-.gif {
-  width: 40%;
-  display: flex;
-  justify-content: center;
-}
-.search {
-  align-items: center;
-}
-.search i {
-  position: relative;
-  right: 2rem;
-}
-.Trending {
-  width: 100vw;
-  height: 40%;
-}
-.cardContainer {
-  width: 100%;
-  /* height: 100%; */
-}
-.card-single {
-  width: 30%;
+.carousel {
   height: 100%;
-  box-shadow: 0 0 10px;
-  flex-direction: column;
-}
-.card-single .img {
   width: 100%;
-  height: 30%;
 }
-.card-single img {
+.carousel-inner {
+  height: 100%;
+  width: 70%;
+}
+.carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+.hotOfferContainer {
+  background-color: rgba(165, 161, 161, 0.555);
+  padding: 1rem 0;
+}
+.hotOfferContainer h2 {
+  text-align: center;
+}
+.hotContainer {
+  width: 100%;
+  justify-content: space-around;
+}
+.productHot {
+  width: 20%;
+  /* height: 50vh; */
+  flex-direction: column;
+  align-items: center;
+  background: whitesmoke;
+  padding-bottom: 0.5rem;
+}
+
+.hotImage {
+  width: 100%;
+  height: 80%;
+}
+.hotImage img {
+  width: 100%;
+  height: 100%;
+}
+.hot-price {
+  font-size: 1.3rem;
+}
+.desc {
+  justify-content: space-around;
+  gap: 1rem;
+}
+.buy-button {
+  width: 80%;
+}
+.buy-button > button {
   width: 100%;
 }
 
 @media (max-width: 690px) {
-  .intro {
-    justify-content: center;
+  .hotContainer {
+    flex-direction: column;
     align-items: center;
-    flex-direction: column-reverse;
-  }
-  .desc input {
-    width: 100%;
-  }
-
-  .gif {
-    width: 70%;
-  }
-  .desc > p:nth-child(1) {
-    font-size: 200%;
-    font-weight: 600;
-  }
-  .font-size-title {
-    font-size: 150%;
-    font-weight: 600;
-  }
-  .containers {
-    height: 70%;
-  }
-  .desc .option-hero {
     gap: 1rem;
   }
-  .desc input {
-    padding-right: 3rem;
+  .productHot {
+    width: 60%;
   }
-}
-.content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.image {
-  width: 50%;
-  height: 70%;
-}
-.image img {
-  width: 100%;
-  height: 100%;
 }
