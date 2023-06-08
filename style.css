@@ -139,20 +139,20 @@ body {
   justify-content: space-evenly;
 }
 
-.delivery {
+.options-to-order {
   width: 30%;
   flex-direction: column;
   align-items: center;
   padding: 1rem 0;
   gap: 1rem;
 }
-.delivery i {
+.options-to-order i {
   padding: 2rem;
   background: rgba(184, 176, 176, 0.712);
   border-radius: 50%;
   color: grey;
 }
-.delivery .btn {
+.options-to-order .btn {
   width: 50%;
   border-radius: 1rem;
 }
@@ -180,14 +180,19 @@ body {
     gap: 1rem;
   }
   .productHot {
-    width: 60%;
+    width: 80%;
   }
   .order-option {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
-  .delivery {
-    width: 60%;
+  .options-to-order {
+    width: 80%;
+  }
+  .options-to-order .btn {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1rem 0;
   }
 }
