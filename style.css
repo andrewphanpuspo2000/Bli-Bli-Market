@@ -1,5 +1,5 @@
 :root {
-  --text-color: black;
+  --text-color: grey;
 }
 * {
   box-sizing: border-box;
@@ -7,16 +7,15 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
 .wrapper {
   min-height: 100vh;
-  width: 100%;
 }
 .flex {
   display: flex;
 }
-.font-size-title {
-  font-size: 200%;
+.font-weight {
   font-weight: 600;
 }
 .headers {
@@ -89,6 +88,7 @@ body {
 }
 .hotOfferContainer h2 {
   text-align: center;
+  color: rgb(85, 80, 80);
 }
 .hotContainer {
   width: 100%;
@@ -96,7 +96,6 @@ body {
 }
 .productHot {
   width: 20%;
-  /* height: 50vh; */
   flex-direction: column;
   align-items: center;
   background: whitesmoke;
@@ -124,14 +123,71 @@ body {
 .buy-button > button {
   width: 100%;
 }
+.order-option-section {
+  margin-top: 5%;
+  background: whitesmoke;
+  text-align: center;
+}
+
+.order-option-section h2 {
+  color: rgb(85, 80, 80);
+}
+
+.order-option {
+  width: 100%;
+  padding: 2rem 0;
+  justify-content: space-evenly;
+}
+
+.delivery {
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+.delivery i {
+  padding: 2rem;
+  background: rgba(184, 176, 176, 0.712);
+  border-radius: 50%;
+  color: grey;
+}
+.delivery .btn {
+  width: 50%;
+  border-radius: 1rem;
+}
 
 @media (max-width: 690px) {
+  .intro {
+    width: 100%;
+  }
+  .option {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  .option > button {
+    width: 100%;
+    padding: 1.3rem 1rem;
+  }
+  .bannerContainer {
+    flex-direction: column-reverse;
+  }
   .hotContainer {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
   .productHot {
+    width: 60%;
+  }
+  .order-option {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .delivery {
     width: 60%;
   }
 }
