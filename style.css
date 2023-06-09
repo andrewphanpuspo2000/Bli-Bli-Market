@@ -1,5 +1,6 @@
 :root {
   --text-color: grey;
+  --text-white-color: white;
 }
 * {
   box-sizing: border-box;
@@ -143,7 +144,7 @@ body {
   width: 30%;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 0;
+  padding: 2rem 0;
   gap: 1rem;
 }
 .options-to-order i {
@@ -155,6 +156,45 @@ body {
 .options-to-order .btn {
   width: 50%;
   border-radius: 1rem;
+}
+.feedbackContainer {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(53, 51, 51);
+  padding: 2rem 0;
+}
+.feedbackContainer h2 {
+  color: var(--text-white-color);
+}
+.feedbackContainer form {
+  width: 40%;
+}
+.feedbackContainer form > * {
+  margin-top: 1rem;
+}
+.feedbackContainer form > input:nth-child(4) {
+  width: 100%;
+}
+.footer-container {
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.575);
+  padding-top: 2rem;
+}
+.footer-options {
+  width: 50%;
+  padding-right: 1rem;
+}
+.footer-options ul {
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+}
+.footer-options ul li > a {
+  text-decoration: none;
+  color: var(--text-white-color);
 }
 
 @media (max-width: 690px) {
@@ -194,5 +234,8 @@ body {
     width: 50%;
     border-radius: 1rem;
     padding: 1rem 0;
+  }
+  .feedbackContainer form {
+    width: 60%;
   }
 }
